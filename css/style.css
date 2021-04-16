@@ -101,6 +101,15 @@ body{
 	line-height: 2.1em;
 }
 
+#menu-locais .locais a{
+	color: #8b8448;
+	padding: 3px;
+}
+
+#menu-locais .locais a:hover{
+	text-decoration: underline;
+}
+
 a.reserva{
 	text-transform: uppercase;
 	background: #a29750;
@@ -200,7 +209,7 @@ ul#navegacao a:hover{
 }
 
 /*
-** FORMATAÇÕES DA PÁGINA GASTRONOMIA **
+** FORMATAÇÕES DAs PÁGINA EM GERAL **
 */
 
 #gastronomia{
@@ -210,7 +219,7 @@ ul#navegacao a:hover{
 	max-width: 1180px;
 }
 
-#conteudo-gastro img{
+#conteudo-geral img{
 	width: 640px;
 	height: 412px;
 	margin: 10px;
@@ -219,7 +228,7 @@ ul#navegacao a:hover{
 	float: left;
 }
 
-#conteudo-gastro h1{
+#conteudo-geral h1{
 	padding: 10px;
 	text-transform: uppercase;
 	font-size: 4em;
@@ -228,7 +237,7 @@ ul#navegacao a:hover{
 	color: #615b2d;
 }
 
-#conteudo-gastro h2{
+#conteudo-geral h2{
 	font-size: 1.5em;
 	text-align: center;
 	color: #615b2d;
@@ -236,7 +245,7 @@ ul#navegacao a:hover{
 	padding: 5px;
 }
 
-#conteudo-gastro p{
+#conteudo-geral p{
 	margin: 10px;
 	padding: 5px;
 }
@@ -270,8 +279,9 @@ label{
     text-align: right;
 }
 
-input, textarea{
+input{
     width: 300px;
+    height: 25px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #999;
@@ -290,17 +300,30 @@ input:focus, textarea:focus{
 	line-height: 25px;
 }
 
-/***********************/
+/*
+** FORMATAÇÕES DA PÁGINA CONTATO **
+*/
+
+#icones h4{
+	font-size: 1.3em;
+	margin: 15px 15px;
+
+}
 
 #icones img{
 	width: 32px;
 	height: 32px;
 	border: none;
-	padding: 0;
+	margin: 0 15px;
 }
 
 #icones span{
-	display: block;
+	color: #000;
+	font-weight: bold;
+	padding: 5px;
+	margin-left: 15px;
+	line-height: 20px;
+	display: inline-block;
 }
 
 /*
@@ -309,7 +332,7 @@ input:focus, textarea:focus{
 
 #rodape{
 	clear: both;
-	padding: 16px;
+	padding: 15px 0;
 	background: #fff url(../imagens/bg-rodape.png) repeat-x top;
 	color: #7d7640;
 }
